@@ -5,31 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RutherLabs</title>
   <style>
+    /* Reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      font-family: Arial, sans-serif;
-      background: #0d1117;
+      background: #000; /* black background like Palantir */
       color: #fff;
-      margin: 0;
-      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
     }
+
     header {
-      padding: 80px 20px;
+      display: flex;
+      justify-content: space-between;
+      padding: 30px 60px;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-      color: #58a6ff;
+
+    nav a {
+      margin-left: 40px;
+      text-decoration: none;
+      color: #aaa;
+      font-size: 14px;
+      transition: 0.2s;
     }
-    p {
-      font-size: 1.2rem;
-      opacity: 0.8;
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 0 60px;
+    }
+
+    .hero h1 {
+      font-size: 4rem;
+      max-width: 700px;
+      font-weight: 300;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      max-width: 450px;
+      color: #ccc;
+    }
+
+    .section {
+      padding: 100px 60px;
+      border-top: 1px solid #111;
+    }
+
+    .section h2 {
+      font-weight: 300;
+      margin-bottom: 20px;
+      font-size: 2.5rem;
+    }
+
+    .footer {
+      padding: 40px 60px;
+      color: #666;
+      border-top: 1px solid #111;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to RutherLabs 🚀</h1>
-    <p>Your website is now live on the internet!</p>
+    <h2>RutherLabs</h2>
+    <nav>
+      <a href="#">Mission</a>
+      <a href="#">Products</a>
+      <a href="#">Research</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
+
+  <section class="hero">
+    <div>
+      <h1>Transforming data into decisions that shape the future.</h1>
+      <p>We build intelligent systems that help organizations understand the world and act with clarity.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Our Mission</h2>
+    <p>RutherLabs creates software that unlocks the power of knowledge, enabling humans and machines to collaborate at scale.</p>
+  </section>
+
+  <section class="section">
+    <h2>Products</h2>
+    <p>Coming soon — platforms for analytics, AI-driven insight, and operational intelligence.</p>
+  </section>
+
+  <div class="footer">© RutherLabs 2025</div>
 </body>
 </html>
